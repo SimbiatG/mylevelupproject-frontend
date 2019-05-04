@@ -70,7 +70,7 @@ validate = (data) => {
    
     try{
       const res = await axios.post(`${env.api}/users`, this.state);
-      console.log(res.data);
+      
       const token = res.data.data.token;
 
       localStorage.setItem('user-token', token);
