@@ -107,16 +107,16 @@ class Absenceform extends Component {
                      <h3 className="header"> Please Fill The Absence Request Form </h3>
 
                      <div className="pagelayout">
-                     <div class="input-group mb-3">
+                     <div className="input-group mb-3">
   <div className="input-group-prepend">
-    <label className="input-group-text" for="inputGroupSelect01"> Type Of Leave</label>
+    <label className="input-group-text" htmlFor="inputGroupSelect01"> Type Of Leave</label>
   </div>
   <select className="custom-select" required id="inputGroupSelect01">
-  <option selected></option>
-    <option value="1"> Sick Leave </option>
-    <option value="2">Maternity Leave </option>
-    <option value="3">Paternity Leave</option>
-    <option value="3"> Holiday Leave</option>
+  <option value="choose" selected> choose </option>
+    <option value="sick"> Sick Leave </option>
+    <option value="maternity">Maternity Leave </option>
+    <option value="paternity">Paternity Leave</option>
+    <option value="holiday"> Holiday Leave</option>
     </select>
 </div>
 <form>

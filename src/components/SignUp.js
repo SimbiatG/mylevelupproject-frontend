@@ -69,7 +69,7 @@ validate = (data) => {
     event.preventDefault();
    
     try{
-      const res = await axios.post(`${env.api}/users/`, this.state);
+      const res = await axios.post(`${env.api}/users`, this.state);
       console.log(res.data);
       const token = res.data.data.token;
 
